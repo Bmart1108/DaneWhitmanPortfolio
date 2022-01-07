@@ -1,12 +1,12 @@
 :root {
-    --title-font: 'Luxurious Roman', sans-serif;
+    --title-font: 'Bebas Neue', cursive;
     --subtitle-font: 'Fira Sans', sans-serif;
-    --bm-body-font: 'Roboto', sans-serif;
+    --bm-body-font: 'Montserrat', sans-serif;
     --bm-primary-color: #91CBFB;
     --bm-secondary-color: #4294BA;
     --bm-dark-color: #212121;
     --bm-light-color: #f8f8f8;
-    --bm-font-size: 1.3rem;
+    --bm-font-size: 1.2rem;
     --bm-font-weight: 400;
     --bm-line-height: 1.5;
     
@@ -86,8 +86,8 @@ body {
     }
 
     .mainTitle {
-        font-size: 2.5rem;
-        line-height: 2rem;
+        font-size: 2rem;
+        line-height: 1.5rem;
     }
 
     .mainLogo {
@@ -98,7 +98,7 @@ body {
     .subtitle {
         font-family: var(--sibtitle-font);
         font-size: .5em;
-        line-height: .8rem;
+        line-height: 1rem;
         font-weight: 100;
         letter-spacing: .5rem;
     }
@@ -111,8 +111,8 @@ body {
     }
 
     .mainTitle {
-        font-size: 2.5rem;
-        line-height: 1.5rem;
+        font-size: 4.5rem;
+        line-height: 3.5rem;
     }
 
     .mainLogo {
@@ -121,10 +121,10 @@ body {
 
     .subtitle {
         font-family: var(--sibtitle-font);
-        font-size: .6rem;
-        line-height: .8rem;
+        font-size: 1.2rem;
+        line-height: 1rem;
         font-weight: 100;
-        letter-spacing: .6rem;
+        letter-spacing: .1rem;
     }
 }
 
@@ -148,7 +148,7 @@ body {
 
     .subtitle {
         font-family: var(--sibtitle-font);
-        font-size: .5em;
+        font-size: .8em;
         line-height: .8rem;
         font-weight: 100;
         letter-spacing: .5rem;
@@ -174,10 +174,10 @@ body {
 
     .subtitle {
         font-family: var(--sibtitle-font);
-        font-size: 1.1rem;
-        line-height: .6rem;
+        font-size: 1rem;
+        line-height: 1rem;
         font-weight: 100;
-        letter-spacing: .5rem;
+        letter-spacing: .1rem;
 
     }
 }
@@ -199,9 +199,9 @@ body {
 
     .subtitle {
         font-family: var(--sibtitle-font);
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1rem;
-        font-weight: 500;
+        font-weight: 400;
         letter-spacing: .4rem;
 
     }
