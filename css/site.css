@@ -1,13 +1,13 @@
 :root {
     --title-font: 'Bebas Neue', cursive;
-    --subtitle-font: 'Fira Sans', sans-serif;
+    --subtitle-font: 'Source Sans Pro', sans-serif;
     --bm-body-font: 'Montserrat', sans-serif;
     --bm-primary-color: #91CBFB;
     --bm-secondary-color: #4294BA;
     --bm-dark-color: #212121;
     --bm-light-color: #f8f8f8;
     --bm-font-size: 1.2rem;
-    --bm-font-weight: 400;
+    --bm-font-weight: 200;
     --bm-line-height: 1.5;
     
 }
@@ -75,6 +75,13 @@ body {
     background-position: left 0px top 74px;
 }
 
+.section-page{
+    height: 100%;
+    padding-top: 6em;
+    padding-bottom: 6em;
+
+}
+
 /*------MEDIA QUERIES-------*/
 
 /*small devices (landscape phones 576px and up*/
@@ -97,7 +104,7 @@ body {
 
     .subtitle {
         font-family: var(--sibtitle-font);
-        font-size: .5em;
+        font-size: .6em;
         line-height: 1rem;
         font-weight: 100;
         letter-spacing: .5rem;
