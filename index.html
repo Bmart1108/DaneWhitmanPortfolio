@@ -30,6 +30,7 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -74,7 +75,7 @@
     </header>
 
     <!--All Sections Below-->
-    <main class="container">
+    <main class="container-fluid">
         <section class="section-page" id="about">
             <h1>About Me</h1>
             <div class="row">
@@ -120,6 +121,8 @@
                 </div>
             </div>
         </section>
+
+        <!----SKILLS---->
         <section class="section-page" id="skills">
             <div class="row">
                 <div class="col-12">
@@ -127,12 +130,10 @@
                     <p>I am a creative problem solver. I build fullstack web and mobile applications. I use C#, SQL,
                         ASP.net, Javacript, Xamarin, Bootstrap, HTML and CSS. I have highlighthed my key technical
                         skills that I will bring to your project.
-
                     </p>
-
                 </div>
             </div>
-            <!---SKILL ICONS-->
+
             <div class="row">
                 <div class="col-12 col-md-4">
                     <img src="/img/LOGOS/logos/CsharpLogo.png" class="" alt="...">
@@ -178,18 +179,486 @@
             </div>
         </section>
 
-        <section class="section-page" id="portfolio">
-            <h1>Portfolio</h1>
-            <p>The look and feel are very important elements to any
-                project. I utilize bootstrap to bring an attractive design
-                to your web projects.</p>
-        </section>
+        <!--Portfolio-->
+        <div class="container">
+            <section class="section-page" id="portfolio">
+                <div class="row">
+                    <div class="col-12">
 
-        <section class="section-page" id="contact">
-            <h1>Contact</h1>
-        </section>
+                        <h1>Portfolio</h1>
+                        <p>Showcasing complete functional projects demonstrates what I
+                            can bring to your project. I built these projects from the
+                            ground up to demonstrate skill fornt-end, back-end, security
+                            and database development. All these projects are fullstack
+                            web projects that are built so that you can demo them
+                            easily. Contact me to get a complete code walkthrough.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!---BUG TRACKER--->
+                <div class="row row-cols-1 row-cols-md-3 gy-5">
+                    <div class="col d-flex justify-content-center justify-content-md-start">
+                        <div class="card projectCard">
+                            <img src="img/LOGOS/logos/BugTracker2.jpg" class="card-img-top img-fluid" alt="BugTracker">
+                            <div class="card-body">
+                                <h5 class="card-title">Insecticide</h5>
+                                <p class="card-text">
+                                    A Full Stack feature rich bug tracker built with asp.net MVC, C#
+                                    and SQL.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#BugTrackerModal">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!---EXPENSE TRACKER--->
+                    <div class="col d-flex justify-content-center">
+                        <div class="card projectCard">
+                            <img src="img/LOGOS/logos/ExpenseTracker2.jpg" card="card-img-top img fluid"
+                                alt="ExpenseTracker" alt="Expense Tracker">
+                            <div class="card-body">
+                                <h5 class="card-title">Cash Tracker</h5>
+                                <p class="card-text">
+                                    A Full Stack personal budgeting app built with asp.net MVC, C#
+                                    and SQL.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#ExpenseTrackerModal">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!----BLOG--->
+                    <div class="col d-flex justify-content-center justify-content-md-end">
+                        <div class="card projectCard">
+                            <img src="img/LOGOS/logos/Blog2.jpg" card="card-img-top img-fluid" alt="Blog">
+                            <div class="card-body">
+                                <h5 class="card-title">Blog</h5>
+                                <p class="card-text">
+                                    A Full Stack complete Blogging platform built with asp.net MVC, C#
+                                    and SQL.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#BlogModal">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <!----CONTACT FORM---->
+        <div class="container d-flex justify-content-end align-items-start">
+            <section class="section-page" id="contact">
+                <h1>Contact Me</h1>
+                <div class="p-2 border border-2 rounded shadow bg-light" id="formContainingDiv">
+                    <form name="contactForm" class="row g-3 p-2" netlify data-netlify-recaptcha="true">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 col-md-6 form-group">
+                                    <label for="inputFirstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" name="firstName" required />
+                                </div>
+                                <div class="col-12 col-md-6 form-group">
+                                    <label for="inputLastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" name="lastName" required />
+                                </div>
+                                <div class="col-12 col-md-4 form-group">
+                                    <label for="inputEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" name="email" required
+                                        placeholder="example@email.com" />
+                                </div>
+                                <div class="col-12 col-md-4 form-group">
+                                    <label for="inputPhone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" name="phone"
+                                        placeholder="ex. 555-555-0101" />
+                                </div>
+                                <div class="col-12 col-md-4 form-group">
+                                    <label for="inputContactReason" class="formLabel">Reason</label>
+                                    <select class="form-select" name="contactReason">
+                                        <option>Choose one...</option>
+                                        <option value="freelance">Freelance Work</option>
+                                        <option value="contract">Contract Work</option>
+                                        <option value="personal">Personal</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 form-group">
+                                    <label for="inputMessage" class="form-label">Message</label>
+                                    <textarea type="text" class="form-control" name="message" rows="4"
+                                        placeholder="Write your message here"></textarea>
+                                </div>
+                                <div class="col-12 form-group">
+                                    <label class="form-label">How did you hear about us?</label>
+                                    <div class="form-check form-check-inline">
+                                        <label for="inputFunnel" class="form-check-label">Radio</label>
+                                        <input type="checkbox" value="radio" class="form-check-input" name="funnel">
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label for="inputFunnel" class="form-check-label">Website</label>
+                                        <input type="checkbox" value="website" class="form-check-input" name="funnel">
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label for="inputFunnel" class="form-check-label">Television</label>
+                                        <input type="checkbox" value="television" class="form-check-input"
+                                            name="funnel">
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label for="inputFunnel" class="form-check-label">Family</label>
+                                        <input type="checkbox" value="family" class="form-check-input" name="funnel">
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label for="inputFunnel" class="form-check-label">Other</label>
+                                        <input type="checkbox" value="other" class="form-check-input" name="funnel">
+                                    </div>
+                                </div>
+                                <div data-netlify-recaptcha="true">
+
+                                </div>
+                                <div class="col-12 d-flex justify-content-center pt-2">
+                                    <button type="submit" class="btn btn-outline-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </section>
+        </div>
 
     </main>
+
+
+    <!----MODALS-->
+    <!---Bugtracker Modal-->
+    <div class="modal fade" id="BugTrackerModal" tabindex="-1" aria-labelledby="BugTrackerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="BugTrackerModalLabel">Insecticide</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+
+                                <div id="carouselBugTracker" class="carousel carousel-dark slide"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselBugtacker" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselBugTracker" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselBugTracker" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselBugTracker" data-bs-slide-to="3"
+                                            aria-label="Slide 4"></button>
+
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/img/LOGOS/logos/BugTracker2.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/LOGOS/logos/BugTrackerScreen1.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/LOGOS/logos/BugTrackerScreen2.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/LOGOS/logos/BugTrackerScreen3.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselBugTracker" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselBugTracker" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-7">
+                                <div>
+                                    <h3>Insecticide</h3>
+                                    <div>
+                                        <p>
+                                            Insecticide is a software defect tracking system.
+                                            Commonly known as a bug tracker. Insectcide is built
+                                            with ASP.NET, MVC, C# and SQL. A role based security
+                                            system was implemented to create permission based roles.
+                                            The roles of Admin , Project Manager, Developer and
+                                            Submitter restrict what the user can see and do. The
+                                            software allows for users to submit tickets and those
+                                            tickets are tracked through status from Open to
+                                            Complete.
+                                        </p>
+                                        <p>
+                                            The system was built with C# and .Net in 3 weeks. The
+                                            front end was developed with HTML, Javascript and
+                                            Bootstrap. The backend utlizies MVC and C#. The database
+                                            was built with SQL Server and hosted on Azure. Please
+                                            visit the site and try it out.
+
+                                        </p>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h4>Project Type</h4>Web Application
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h4>Technologies:</h4>
+                                            <p>
+                                                C#, SQL, ASP.Net MVC, JS, CSS, Bootstrap, HTML5
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <buton type="button" class="btn btn-primary">Visit Site</buton>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----Bug Tracker Modal End---->
+    <!-----Expense Tracker Modal---->
+    <div class="modal fade" id="ExpenseTrackerModal" tabindex="-1" aria-labelledby="ExpenseTrackerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ExpenseTrackerModalLabel">Grow Your Money</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+
+                                <div id="carouselExpenseTracker" class="carousel carousel-dark slide"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExpenseTracker"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExpenseTracker"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExpenseTracker"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExpenseTracker"
+                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/img/LOGOS/logos/BugTracker2.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/LOGOS/logos/BugTrackerScreen1.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/LOGOS/logos/BugTrackerScreen2.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/LOGOS/logos/BugTrackerScreen3.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExpenseTracker" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExpenseTrackerr" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-md-7">
+                                <div>
+                                    <h3>Grow Your Money</h3>
+                                    <div>
+                                        <p>
+                                            Financial planning is an ongoing process that will reduce your stress about
+                                            money, support your current needs and help you build a nest egg for your
+                                            long-term goals, like retirement. Financial planning is important because it
+                                            allows
+                                            you to make the most of your assets, and helps ensure you meet your future
+                                            goals.
+                                        </p>
+                                        <p>
+                                            Financial planning isn't just for the wealthy: Creating a roadmap for your
+                                            financial future is for everyone. You can make a financial plan yourself, or
+                                            you can get help from a financial planning professional. Due to online
+                                            services
+                                            like robo-advisors, getting assistance with financial planning is more
+                                            affordable
+                                            and accessible than ever.
+
+                                        </p>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h4>Project Type</h4>Web Application
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h4>Technologies:</h4>
+                                            <p>
+                                                C#, SQL, ASP.Net MVC, JS, CSS, Bootstrap, HTML5
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <buton type="button" class="btn btn-primary">Visit Site</buton>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------Expense Modal End----->
+    <!-------BLOG Modal---->
+    <div class="modal fade" id="BlogModal" tabindex="-1" aria-labelledby="BlogModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="BlogModalLabel">Blogging It</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <div id="carouselBlog" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselBlog" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselBlog" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselBlog" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselBlog" data-bs-slide-to="3"
+                                            aria-label="Slide 4"></button>
+
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/img/LOGOS/logos/BugTracker2.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/LOGOS/logos/BugTrackerScreen1.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/LOGOS/logos/BugTrackerScreen2.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/LOGOS/logos/BugTrackerScreen3.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBlog"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselBlog"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-md-7">
+                                <div>
+                                    <h3>Blogging It</h3>
+                                    <div>
+                                        <p>
+                                            How can you make learning to code easier and achieve your goals faster?
+                                            Sharing
+                                            your learning experience through blogging can help you understand coding
+                                            faster.
+                                            If you are new to programming, starting a blog about learning coding is the
+                                            best
+                                            way to create an online presence and connect with like-minded developers
+                                            worldwide.
+                                        </p>
+                                        <p>
+                                            The bottom line is: when you write about what you are learning, you are
+                                            processing
+                                            and reflecting the topic on a deeper level. You will stay more focused and
+                                            organised,
+                                            helping you clear your head and learn faster.
+
+                                        </p>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h4>Project Type</h4>Web Application
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h4>Technologies:</h4>
+                                            <p>
+                                                C#, SQL, ASP.Net MVC, JS, CSS, Bootstrap, HTML5
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <buton type="button" class="btn btn-primary">Visit Site</buton>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------BLOG Modal END----->
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -236,6 +705,15 @@
             });
         });
     </script>
+
+   <footer class="footer mt-auto py-5 bg-light sticky-footer">
+       <div class="container-fluid text-center">
+           <span class="text-muted">
+               <h5> &copy; Built by Brandon Martin 2022 </h5>
+           </span>
+       </div>
+   </footer>
+
 </body>
 
 </html>

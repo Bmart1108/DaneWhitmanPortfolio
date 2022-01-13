@@ -39,12 +39,13 @@ body {
 }
 
 
-/*2560x500
+/* Picture Resolution Sizes
 1200x400
 992x300
 576x200
 375x150
 */
+
 /* styling the main title*/
 .mainTitle {
     font-family: var(--title-font);
@@ -81,6 +82,16 @@ body {
     padding-bottom: 6em;
 
 }
+
+/*------Project Cards-----*/
+.projectCard{
+    width: 18rem;
+}
+
+
+
+
+
 
 /*------MEDIA QUERIES-------*/
 
